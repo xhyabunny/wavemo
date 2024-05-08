@@ -1,0 +1,27 @@
+{
+  "name": "wavemo",
+  "version": "1.0.0",
+  "description": "WaveMo is an AudioResponsive tool that helps you animate your webpage according to the audio on it.",
+  "private": false,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [ "dist", "README.md" ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+wavemo"
+  },
+  "author": "xhyabunny",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
+  }
+}

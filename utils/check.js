@@ -1,4 +1,4 @@
-import { print } from "./print";
+import { print } from "wavemo/utils/print";
 
 export const isCSSColor = (colorString) => {
     const hexRegex = /^#([0-9a-fA-F]{3}){1,2}$/;

@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { easeInOutQuad } from './utils/math';
 import { print } from './utils/print';
 import { dynamicRepl, findRepeatedWords, isCSSColor } from './utils/check';
 
-export const useVisualizer = (audioRef, options, elements) => {
+const useVisualizer = (audioRef, options, elements) => {
 
     /*
     options: {
@@ -253,3 +253,5 @@ export const useVisualizer = (audioRef, options, elements) => {
         }
     };
 }
+
+export default useVisualizer;

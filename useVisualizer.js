@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
-import { easeInOutQuad } from './utils/math';
-import { print } from './utils/print';
-import { dynamicRepl, findRepeatedWords, isCSSColor } from './utils/check';
+import { easeInOutQuad } from 'wavemo/utils/math';
+import { print } from 'wavemo/utils/print';
+import { dynamicRepl, findRepeatedWords, isCSSColor } from 'wavemo/utils/check';
 
 const useVisualizer = (audioRef, options, elements) => {
 
@@ -136,7 +136,7 @@ const useVisualizer = (audioRef, options, elements) => {
                         }
                     }
                 }
-                print(_SHOW_BUFFER, "log", `AUDIO_BUFFER_READY\nFFT_SIZE=${analyser.fftSize}\nSOURCE=${analyser ? 'CONNECT' : 'ERR'}`);
+                print(_SHOW_BUFFER, "log", `AUDIO_BUFFER_READY\nFFT_SIZE=${analyser.fftSize}\nSOURCE=${analyser ? 'CONNECTED' : 'ERR'}`);
                 analyserRef.current = analyser;
                 if(!audioRef.current) return print(_SHOW_ERROR, "error", 'AUDIO_ERR\nNO AUDIO FOUND TO PLAY\nSTOPPING...')
                     if(options.play && options.play == true)

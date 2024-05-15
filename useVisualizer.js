@@ -155,9 +155,12 @@ const useVisualizer = (audioRef, options, elements) => {
                     if (!effect.blending) return print(_SHOW_WARN, "warn", `ELEMENT_WARNING\nNO BLENDING APPLIED AT ELEMENT[${elementIndex}].EFFECT[${effectIndex}]\nDEFAULT BLENDING IS ${defaults.blending}`)
                     let [firstWord, ...otherWords] = effect.type.split(' ');
                     switch(firstWord){
-                        case "text-shadow":
+                        case "t-shadow":
+                        case "b-shadow":
                         case "size":
-                        case "font-size":
+                        case "f-size":
+                        case "h":
+                        case "w":
                             break;
                         case "custom":
                             print(_SHOW_INFO, "log", `EFFECT_INFO\nCUSTOM EFFECT APPLIED AT ELEMENT[${elementIndex}]\n${otherWords.join(' ')}`)
@@ -199,17 +202,23 @@ const useVisualizer = (audioRef, options, elements) => {
                     let intensit = easedIntensity * (!effect.intensity || isNaN(effect.intensity) ? defaults.intensity : effect.intensity) ;
                     let [firstWord, ...otherWords] = effect.type.split(' ');
                     switch(firstWord) {
-                        case "text-shadow":
+                        case "t-shadow":
                             element.ref.current.style.textShadow = `0 0 ${intensit}em ${!effect.color || !isCSSColor(effect.color) ? defaults.color : effect.color}`;
                             break;
-                        case "box-shadow":
+                        case "b-shadow":
                             element.ref.current.style.boxShadow = `0 0 ${intensit}em ${!effect.color || !isCSSColor(effect.color) ? defaults.color : effect.color}`;
                             break;
                         case "size":
                             element.ref.current.style.width = `${intensit}em`;
                             element.ref.current.style.height = `${intensit}em`;
                             break;
-                        case "font-size":
+                        case "h":
+                            element.ref.current.style.height = `${intensit}em`;
+                            break;
+                        case "w":
+                            element.ref.current.style.width = `${intensit}em`;
+                            break;
+                        case "f-size":
                             let fontSize = 16; // Default font size for other elements
                             switch(element.ref.current.tagName.toLowerCase()) {
                                 case "p":

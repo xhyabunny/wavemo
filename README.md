@@ -6,7 +6,7 @@ WaveMo is an Audio-Responsive tool that helps you animate your reactive webpage 
 > This tool only works with ES6 Module.
 
 > [!NOTE]
-> Installation guide [here](https://wavemo.xhyabunny.org/).
+> Installation guide [here](https://wavemo.netlify.app/).
 
 ## DEFAULT STYLES
 - `f-size` changes font size, only allowed for text type tags using.
@@ -15,4 +15,4 @@ WaveMo is an Audio-Responsive tool that helps you animate your reactive webpage 
 - `h` changes the height of any object using.
 - `b-shadow` changes the shadow dispersion on elements (box types).
 - `t-shadow` changes the shadow dispersion on text elements only.
-- `custom` add your custom CSS style. (more info [here](https://wavemo.xhyabunny.org/))
+- `custom` add your custom CSS style. (more info [here](https://wavemo.netlify.app/))

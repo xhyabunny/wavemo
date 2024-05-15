@@ -1,7 +1,7 @@
 {
   "name": "wavemo",
-  "version": "1.0.8",
-  "description": "WaveMo is an AudioResponsive tool that helps you animate your webpage CSS responding to playing audio frequency.",
+  "version": "1.0.9",
+  "description": "WaveMo is an Audio-Responsive tool that helps you animate your reactive webpage styles according to audio frequency.",
   "private": false,
   "main": "useVisualizer.js",
   "files": ["useVisualizer.js", "utils", "README.md", "index.d.ts"],

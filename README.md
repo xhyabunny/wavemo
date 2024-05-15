@@ -5,7 +5,7 @@ Audio responsive tool for React.
 > [!WARNING]
 > This tool only works with ES6 Module.
 
-> [!INFO]
+> [!NOTE]
 > Installation guide [here](https://wavemo.xhyabunny.org/).
 
 ## DEFAULT STYLES

@@ -9,8 +9,8 @@ WaveMo is an Audio-Responsive tool that helps you animate your reactive webpage 
 > Installation guide [here](https://wvmo.xhyabunny.org/).
 
 ## DEFAULT STYLES
-- `m` margin (also combinable with `l`eft `r`ight `t`op `b`ottom `x` or `y`) 
-- `p` padding (also combinable with `l`eft `r`ight `t`op `b`ottom `x` or `y`) 
+- `m` margin (also combinable with `l`eft `r`ight `t`op `b`ottom `x` or `y`) example usage: `ml` `mr` `my`
+- `p` padding (also combinable with `l`eft `r`ight `t`op `b`ottom `x` or `y`) example usage: `pl` `pr` `my`
 - `b-size` changes background size.
 - `t-size` changes font size, only allowed for text type tags.
 - `size` changes the size of any object by width and height.

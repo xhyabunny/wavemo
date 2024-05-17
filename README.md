@@ -9,10 +9,11 @@ WaveMo is an Audio-Responsive tool that helps you animate your reactive webpage 
 > Installation guide [here](https://wvmo.xhyabunny.org/).
 
 ## DEFAULT STYLES
-- `f-size` changes font size, only allowed for text type tags using.
-- `size` changes the size of any object by width and height using.
-- `w` changes the width of any object using.
-- `h` changes the height of any object using.
+- `b-size` changes background size.
+- `t-size` changes font size, only allowed for text type tags.
+- `size` changes the size of any object by width and height.
+- `w` changes the width of any object.
+- `h` changes the height of any object.
 - `b-shadow` changes the shadow dispersion on elements (box types).
 - `t-shadow` changes the shadow dispersion on text elements only.
 - `t-gradient <RGB> <RGB>` (for accent color) use 3 digit numbers for 0-9 to mark RGB values, the color slides from first RGB to second RGB value depending on intensity.

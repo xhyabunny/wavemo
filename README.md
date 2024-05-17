@@ -15,4 +15,6 @@ WaveMo is an Audio-Responsive tool that helps you animate your reactive webpage 
 - `h` changes the height of any object using.
 - `b-shadow` changes the shadow dispersion on elements (box types).
 - `t-shadow` changes the shadow dispersion on text elements only.
+- `t-gradient <RGB> <RGB>` (for accent color) use 3 digit numbers for 0-9 to mark RGB values, the color slides from first RGB to second RGB value depending on intensity.
+- `b-gradient <RGB> <RGB>` (for background) same as above but background.
 - `custom` add your custom CSS style. (more info [here](https://wvmo.netlify.app/))

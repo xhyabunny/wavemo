@@ -22,6 +22,7 @@ WaveMo is an Audio-Responsive tool that helps you animate your reactive webpage 
 - `b-gradient <RGB> <RGB>` *(for background)* same as above but background.
 - `custom` add your custom CSS style. *(more info [here](https://wvmo.xhyabunny.org/))*
 
+# VISITS OVER THE TIME
 <p align="center">
     (since 2024/11/30)
     <br>
